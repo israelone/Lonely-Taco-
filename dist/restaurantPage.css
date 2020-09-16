@@ -1,0 +1,323 @@
+html,
+body {
+  margin: 0 auto;
+  height: 100%;
+}
+
+li {
+  display: inline-block;
+}
+
+#navbar {
+  width: 100%;
+  text-align: left;
+  margin: 0 auto;
+}
+
+#navbar ul {
+  padding-left: 10px;
+  margin-top: auto;
+  margin-bottom: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+#restaurantTitle,
+#menu,
+#footer,
+#socialMedia {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.item {
+  margin: 10px;
+  width: 80%;
+  height: 250px;
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: 20% 80%;
+  place-self: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 10px 12px -4px rgba(173, 173, 173, 1);
+  -moz-box-shadow: 10px 10px 12px -4px rgba(173, 173, 173, 1);
+  box-shadow: 10px 10px 12px -4px rgba(173, 173, 173, 1);
+}
+
+#footer > div {
+  width: 50%;
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#menu {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(3, 33.33%);
+  grid-auto-flow: column;
+  padding: 10px 0;
+}
+
+.description {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+#address {
+  text-align: center;
+  padding: 50px 0;
+  display: grid;
+  grid-template-rows: repeat(2, 180px);
+  align-self: center;
+}
+
+#navbar li {
+  margin: auto 10px;
+  font-size: 30px;
+}
+
+#navbar {
+  display: flex;
+  background-color: blue;
+  height: 100px;
+}
+
+.picture img {
+  border-radius: 2px;
+  height: 170px;
+  width: 170px;
+  -webkit-box-shadow: 10px 10px 12px -4px rgba(173, 173, 173, 1);
+  -moz-box-shadow: 10px 10px 12px -4px rgba(173, 173, 173, 1);
+  box-shadow: 10px 10px 12px -4px rgba(173, 173, 173, 1);
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#restaurantTitle p {
+  font-size: 45px;
+}
+
+#contactInfo {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#footer {
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: aqua;
+  width: 100%;
+}
+i {
+  margin: auto 10px;
+  font-size: 80px;
+}
+
+#links {
+  height: 100%;
+  display: flex;
+}
+
+#restaurantTitle ul {
+  padding: 0;
+}
+
+#address div {
+  text-align: center;
+}
+
+#footer i {
+  font-size: 50px;
+}
+
+#whatever {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#logo img {
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100%;
+  grid-template-rows: 100px 1fr;
+}
+
+#restaurantTitle {
+  padding: 70px 20px;
+}
+
+address {
+  font-size: 30px;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#socialMedia,
+#address {
+  align-self: center;
+}
+
+#socialMedia ul {
+  padding-left: 0;
+  margin: auto 0;
+}
+
+#socialMedia span {
+  margin-bottom: 10px;
+  margin-left: 0;
+  font-size: 100px;
+}
+
+#socialMedia i {
+  margin: 10px 40px;
+  font-size: 100px;
+}
+
+address {
+  font-size: 50px;
+}
+
+/* Style for Tablet display */
+@media only screen and (max-width: 768px) {
+  .picture img {
+    height: 125px;
+    width: 125px;
+  }
+
+  address {
+    font-size: 30px;
+  }
+  #socialMedia span {
+    margin-bottom: 10px;
+    margin-left: 0;
+    font-size: 70px;
+  }
+  #restaurantTitle {
+    padding: 20px 30px;
+  }
+  #restaurantTitle p {
+    font-size: 40px;
+  }
+}
+
+/* Styles for Medium Phone display */
+@media only screen and (max-width: 375px) {
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .description {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .item {
+    display: block;
+  }
+
+  h3 {
+    margin: 2px 0;
+  }
+
+  #restaurantTitle p {
+    font-size: 18px;
+    margin: 10px 5px;
+  }
+
+  .text {
+    display: flex;
+  }
+
+  .text p {
+    align-content: center;
+    margin: auto 5px;
+  }
+
+  #links li {
+    font-size: 20px;
+  }
+
+  #menu {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-auto-flow: column;
+    padding: 10px 0;
+  }
+
+  .item {
+    display: grid;
+    grid-template-rows: 20% 80%;
+    place-self: center;
+    border-radius: 5px;
+  }
+
+  #links li {
+    font-size: 20px;
+  }
+
+  #logo img {
+    margin-left: 6px;
+  }
+
+  #links li {
+    margin: 6px;
+    font-size: 24px;
+  }
+
+  #restaurantTitle p {
+    font-size: 30px;
+  }
+  #address {
+    text-align: center;
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(2, 180px);
+    align-self: center;
+  }
+  #socialMedia i {
+    margin: 0;
+    font-size: 70px;
+  }
+
+  #socialMedia span {
+    margin-bottom: 10px;
+    margin-left: 0;
+    font-size: 30px;
+  }
+  address {
+    font-size: 25px;
+  }
+}
+/* green: #4dae27 
+  yellow: #fcb93e
+  red: #f73d23
+  brown: #9f612c
+  light  brown :#e6a958
+*/
